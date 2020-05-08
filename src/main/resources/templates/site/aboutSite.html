@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="path/to/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+</head>
+<div th:replace="site/head::head(${commons.site_title()},${commons.google_site_verification()}, ${commons.baidu_site_verification()})"></div>
+<body th:style="'background:url(/bac-white.jpg);no-repeat; background-size: cover;'" onLoad="scrollTo(0,10)">
+<!-- header -->
+
+<div th:replace="site/header::header"></div>
+
+<!-- header -->
+
+<!-- main -->
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span6 col-xs-12 col-sm-12 col-md-8 col-lg-5 col-lg-offset-3">
+            <div class="swiper-container " style="width: 800px; " >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="xiyou.jpg" alt=""style="height: 500px;" >
+                        <div class="carousel-caption">
+                            <h4>
+                                我的西柚——西南石油大学
+                            </h4>
+                            <p>
+                                一所在成都新都区的园林式大学，它是我梦想启航地方,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="yibin.jpg" alt=""style="width: 100%">
+                        <div class="carousel-caption">
+                            <h4>
+                                我的家乡宜宾
+                            </h4>
+                            <p>
+                                酒都宜宾，同时也是一个以面食——燃面闻名的城市，每次回家非得吃一碗燃面不可，不然浑身难受
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="siyue.jpg" alt=""style="height: 500px">
+                        <div class="carousel-caption">
+                            <h4>
+                                四月は君の嘘
+                            </h4>
+                            <p>
+                                此生无悔入四月，来世愿做友人A
+                            </p>
+                            <p>
+                                我喜欢的动漫
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="timg0.jpg" alt=""style="width: 100%">
+                        <div class="carousel-caption">
+                            <h4>
+                                saber lily
+                            </h4>
+                            <p>
+                                我最喜欢的动漫角色之一，Fate世界里面的骑士王亚瑟
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <h3 class="text-center">
+                关于本站
+            </h3>
+            <blockquote>
+                <p>
+                    使用的技术
+                </p>
+                <p>
+                    <span>开发工具为IDEA</span>
+                </p>
+            </blockquote>
+
+            <p>
+                后端：SpringBoot + Mysql + Mybatis + Maven + OSS + thymeleaf模板
+            </p>
+            <p>
+                前端：BoostStrap框架 + html + css + js + jQuery + editor.md等
+            </p>
+
+            <h1>
+                <strong>工具以及相关环境：</strong>
+            </h1>
+            <ul>
+                <li>
+                    <p>
+                        JDK版本：1.8及以上；
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        springboot版本：2.0；
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        thymeleaf；
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        mybatis；
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        pagehelper；
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        druid；
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        swagger2；
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        maven
+                    </p>
+                </li>
+            </ul>
+            <h2>
+                <strong>开发过程：</strong>
+            </h2>
+
+            <p style="font-family: 黑体;font-size: 15px;font-weight: 900 ;!important;">
+                开发这个个人博客，我写了很久，其实这是博客4.0.之前写过几次都是因为事前规划不好，导致后续功能难以继续添加，于是重构了项目。但是这次的这个项目还是有很多不完善的地方，前端设计太烂（我也没办法，我不会啊），后端部分功能遇到BUG，暂时搁置了。虽然开发项目也挺重要的但是不能耗费太多时间。等以后空闲了完善二级回复，搜索，游客注册等功能。这个项目前端虽然借鉴了相关模板以及Github的优秀Springboot项目，但是自己没有系统学习前端，很多地方不理解。只能暂时这样了。能看就行╮（﹀_﹀）╭。
+            </p>
+            <p style="font-family: 黑体;font-size: 15px;font-weight: 900 ;!important;">
+                在后端开发过程中，我深深的感受到springboot开发的方便性，不用像ssm那样进行复杂的配置。只需简单的调用即可完成相关的开发。在之前的开发中使用的几次JPA，这次使用的Mybatis。这两者都使用后，Mybatis的优点在于，可以进行细致的sql语句优化，可以减少查询的字段，并且更容易学习。<span>Hibernate的DAO层开发比MyBatis简单，Mybatis需要维护SQL和结果映射。而JPA也就是</span><span>Hibernate。它对对象的维护和缓存要比MyBatis好，对增删改查的对象的维护要方便。</span><span>Hibernate数据库移植性很好，MyBatis的数据库移植性不好，不同的数据库需要写不同SQL。</span><span>Hibernate有更好的二级缓存机制，可以使用第三方缓存。MyBatis本身提供的缓存机制不佳。反正各有各的优点，以后的项目我可能会选择JPA进行开发因为</span><span>Hibernate是全自动的，关心的细节比Mybatis少。简单来说就是使用起来感觉更方便。</span>
+            </p>
+
+            <p style="font-family: 黑体;font-size: 15px;font-weight: 900 ;!important;">
+                <span>现在项目还有很多功能没有完善，有许多Bug，后期的完善之后会选择发布到Github上进行开源。</span>
+
+            </p>
+            <p style="font-family: 黑体;font-size: 15px;font-weight: 900 ;!important;">
+                <span>暂时写道这吧，以后有时间进行补充</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- main -->
+
+<!-- footer -->
+<div th:replace="site/footer::footer(${commons.site_title()},${commons.site_record()},${commons.site_url()})"></div>
+
+</body>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay:{
+            stopOnLastSlide:true,
+            delay:2000,
+            disableOnInteraction: false,
+        },
+
+
+    })
+</script>
+<style type="text/css">
+
+
+</style>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay:{
+            stopOnLastSlide:true,
+            delay:2000,
+            disableOnInteraction: false,
+        },
+
+
+    })
+</script>
+
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<title>友链</title>
+<div th:replace="site/head::head(${commons.site_title()},${commons.google_site_verification()}, ${commons.baidu_site_verification()})"></div>
+<body th:style="'background:url(/siyue.jpg);no-repeat; background-size: cover;'"onLoad="scrollTo(0,10)">
+    	<!-- header -->
+        <div th:replace="site/header::header"></div>
+        <!-- header -->
+        <!-- main -->
+        <main role="main-inner-wrapper" class="container">
+            <div class="row">
+            	<section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+                	<article role="pge-title-content">
+                        <header>
+                        	<h2><span>welcome </span> 以下是一些大佬们的博客链接</h2>
+                        </header>
+                        <p>想要添加友链的可以留言给我</p>
+                    </article>
+                </section>
+
+                <div class="clearfix"></div>
+                <!-- thumbnails -->
+                	<div class="thumbnails-pan" style="width: 900px ;height: 600px">
+                        <th:block th:each="link,linkStat : ${links}">
+                            <th:block th:if="${linkStat.index < 7}">
+                                <section class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
+                                    <figure>
+                                        <img th:src="@{'/site/images/about-images/about-image-' + ${linkStat.index+1} + '.jpg'} "style="width:  100%;height: 400px" th:onclick="'javascript:linkFirend(\''+${link.slug}+'\')'" class="img-responsive"/>
+                                        <figcaption>
+                                            <h3><th:block th:text="${link.name}"></th:block></h3>
+                                            <h5><th:block th:text="${link.description}"></th:block></h5>
+                                        </figcaption>
+                                    </figure>
+                                </section>
+                            </th:block>
+                        </th:block>
+                    </div>
+                <!-- thumbnails -->
+
+            </div>
+
+        </main>
+    	<!-- main -->
+        <!-- footer -->
+        <div th:replace="site/footer::footer(${commons.site_title()},${commons.site_record()},${commons.site_url()})"></div>
+</body>
+</html>
